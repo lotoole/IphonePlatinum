@@ -1,5 +1,4 @@
-import main.PhoneAPI;
-import main.PhoneAPIResponse;
+package sample;
 
 public class Driver {
     public static void main(String args[]) {
@@ -11,7 +10,7 @@ public class Driver {
         System.out.println("failed");
       }
       System.out.println("message is " + r.getMessage());
-      System.out.println("data is " + r.getData().toString());
+//      System.out.println("data is " + r.getData().toString());
 
       r = PhoneAPI.placeCall("1-802-123-4567");
       System.out.println("place call");
@@ -21,7 +20,7 @@ public class Driver {
         System.out.println("failed");
       }
       System.out.println("message is " + r.getMessage());
-      System.out.println("data is " + r.getData().toString());
+//      System.out.println("data is " + r.getData().toString());
 
     }
 }

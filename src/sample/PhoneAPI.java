@@ -1,8 +1,7 @@
-package main;
+package sample;
 
-import com.google.gson.*;
-
-import main.PhoneAPIResponse;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 
 import java.io.*;
 import java.net.HttpURLConnection;
