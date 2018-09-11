@@ -90,7 +90,7 @@ public class PhoneAPIResponse {
     }
 
     /**
-     * message setter.
+     * message setter
      *
      * @param message The message summarizing what happened.
      */

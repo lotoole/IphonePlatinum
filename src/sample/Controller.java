@@ -149,7 +149,27 @@ public class Controller {
     @FXML
     void placeCall(ActionEvent event) {
         String PhoneNumber = showNum.getText();
-        System.out.println(PhoneAPI.placeCall(PhoneNumber).getMessage());
+        PhoneAPIResponse r = PhoneAPI.verifyConnection();
+
+        System.out.println("verify connection");
+        if ( r.isSuccess() ) {
+            System.out.println("success");
+        } else {
+            System.out.println("failed");
+        }
+        System.out.println("message is " + r.getMessage());
+        System.out.println("data is " + r.getData().toString());
+
+        r = PhoneAPI.placeCall(PhoneNumber);
+        System.out.println("place call");
+        if ( r.isSuccess() ) {
+            System.out.println("success");
+        } else {
+            System.out.println("failed");
+        }
+        System.out.println("message is " + r.getMessage());
+        System.out.println("data is " + r.getData().toString());
+
 
     }
 
