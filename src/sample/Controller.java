@@ -170,6 +170,7 @@ public class Controller {
         System.out.println("message is " + r.getMessage());
         System.out.println("data is " + r.getData().toString());
 
+        showJson.setText(r.getData().toString());
 
     }
 
