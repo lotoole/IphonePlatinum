@@ -148,6 +148,8 @@ public class Controller {
 
     @FXML
     void placeCall(ActionEvent event) {
+        String PhoneNumber = showNum.getText();
+        System.out.println(PhoneAPI.placeCall(PhoneNumber).getMessage());
 
     }
 
