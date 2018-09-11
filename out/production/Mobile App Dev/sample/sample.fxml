@@ -5,72 +5,72 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button layoutX="138.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="1">
+      <Button fx:id="btn1" layoutX="138.0" layoutY="75.0" mnemonicParsing="false" onAction="#addOne" prefHeight="27.0" prefWidth="32.0" text="1">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="196.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="2">
+      <Button fx:id="btn2" layoutX="196.0" layoutY="75.0" mnemonicParsing="false" onAction="#addTwo" prefHeight="27.0" prefWidth="32.0" text="2">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="255.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="3">
+      <Button fx:id="btn3" layoutX="255.0" layoutY="75.0" mnemonicParsing="false" onAction="#addThree" prefHeight="27.0" prefWidth="32.0" text="3">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="138.0" layoutY="109.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="4">
+      <Button fx:id="btn4" layoutX="138.0" layoutY="109.0" mnemonicParsing="false" onAction="#addFour" prefHeight="27.0" prefWidth="32.0" text="4">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="196.0" layoutY="109.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="5">
+      <Button fx:id="btn5" layoutX="196.0" layoutY="109.0" mnemonicParsing="false" onAction="#addFive" prefHeight="27.0" prefWidth="32.0" text="5">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="255.0" layoutY="109.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="6">
+      <Button fx:id="btn6" layoutX="255.0" layoutY="109.0" mnemonicParsing="false" onAction="#addSix" prefHeight="27.0" prefWidth="32.0" text="6">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="138.0" layoutY="144.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="7">
+      <Button fx:id="btn7" layoutX="138.0" layoutY="144.0" mnemonicParsing="false" onAction="#addSeven" prefHeight="27.0" prefWidth="32.0" text="7">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="196.0" layoutY="144.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="8">
+      <Button fx:id="btn8" layoutX="196.0" layoutY="144.0" mnemonicParsing="false" onAction="#addEight" prefHeight="27.0" prefWidth="32.0" text="8">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="255.0" layoutY="144.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="9">
+      <Button fx:id="btn9" layoutX="255.0" layoutY="144.0" mnemonicParsing="false" onAction="#addNine" prefHeight="27.0" prefWidth="32.0" text="9">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="138.0" layoutY="180.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="*">
+      <Button fx:id="btn10" layoutX="138.0" layoutY="180.0" mnemonicParsing="false" onAction="#addStar" prefHeight="27.0" prefWidth="32.0" text="*">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="196.0" layoutY="180.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="0">
+      <Button fx:id="btn0" layoutX="196.0" layoutY="180.0" mnemonicParsing="false" onAction="#addZero" prefHeight="27.0" prefWidth="32.0" text="0">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="255.0" layoutY="180.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0" text="#">
+      <Button fx:id="btn12" layoutX="255.0" layoutY="180.0" mnemonicParsing="false" onAction="#addPound" prefHeight="27.0" prefWidth="32.0" text="#">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </Button>
-      <Button layoutX="173.0" layoutY="261.0" mnemonicParsing="false" text="Place Call" />
-      <PasswordField layoutX="129.0" layoutY="301.0" />
-      <TextField layoutX="153.0" layoutY="218.0" prefHeight="27.0" prefWidth="118.0" />
+      <Button fx:id="btnCall" layoutX="162.0" layoutY="267.0" mnemonicParsing="false" onAction="#placeCall" prefHeight="17.0" prefWidth="99.0" text="Place Call" />
       <Label layoutX="171.0" layoutY="41.0" text="Liams Iphone" />
+      <TextField fx:id="showNum" layoutX="155.0" layoutY="226.0" prefHeight="27.0" prefWidth="115.0" />
+      <TextField fx:id="showJson" layoutX="128.0" layoutY="309.0" />
    </children>
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
